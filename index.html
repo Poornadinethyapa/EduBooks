@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBooks - Your Gateway to Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-book-open"></i> EduBooks
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search books...">
+                <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Gateway to<br>Knowledge</h1>
+            <p>Discover a wide range of academic books, resources and materials to support your learning journey.</p>
+            <a href="#books" class="btn btn-primary">Explore Books</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Features Section -->
+        <section id="about" class="features">
+            <div class="feature-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Wide Collection</h3>
+                <p>Access hundreds of books across multiple subjects.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>For Students</h3>
+                <p>Find recommended books for your courses.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+                <h3>Easy Access</h3>
+                <p>Browse and search books quickly.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>Quality Resources</h3>
+                <p>Reliable and up-to-date learning materials.</p>
+            </div>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section id="books" class="featured-books">
+            <div class="section-header">
+                <h2>Featured Books</h2>
+                <a href="#" class="view-all">View All &rarr;</a>
+            </div>
+            <div class="books-grid" id="booksContainer">
+                <!-- Book Card 1 -->
+                <div class="book-card">
+                    <img src="images/book01.jpg" alt="Machine Learning Cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Designing Machine Learning Concepts</h3>
+                        <p class="category">Machine Learning</p>
+                        <button class="btn btn-outline btn-details">View Details</button>
+                    </div>
+                </div>
+                <!-- Book Card 2 -->
+                <div class="book-card">
+                    <img src="images/book02.jpeg" alt="AI Engineering Cover">
+                    <div class="book-info">
+                        <h3 class="book-title">AI Engineering</h3>
+                        <p class="category">AI Engineering</p>
+                        <button class="btn btn-outline btn-details">View Details</button>
+                    </div>
+                </div>
+                <!-- Book Card 3 -->
+                <div class="book-card">
+                    <img src="images/book03.jpg" alt="Machine Learning Cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Machine Learning and Scikit-Learn,Keras and Tensor-Flow</h3>
+                        <p class="category">Machine Learning</p>
+                        <button class="btn btn-outline btn-details">View Details</button>
+                    </div>
+                </div>
+                <!-- Book Card 4 -->
+                <div class="book-card">
+                    <img src="images/book04.jpeg" alt="Large Language Models Cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Large Language Models</h3>
+                        <p class="category">Machine Learning</p>
+                        <button class="btn btn-outline btn-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="contact" class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join Our Learning Community</h2>
+                <p>Get the latest book recommendations, study tips and updates.</p>
+                <form id="subscribeForm" class="subscribe-form">
+                    <input type="email" id="emailInput" placeholder="Enter your email address..." required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <p id="formMessage" class="form-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo"><i class="fa-solid fa-book-open"></i> EduBooks</a>
+                <p>EduBooks is a specialized platform providing developers and students access to top-rated books on Artificial Intelligence, Machine Learning, and Data Science.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EduBooks. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
